@@ -1,5 +1,5 @@
 
-function scrollUp(upSelector) {
+function scrollUp(upSelector, classActive) {
 
 	const up = document.querySelector(upSelector);
 	window.addEventListener("scroll", function () {
@@ -7,17 +7,13 @@ function scrollUp(upSelector) {
 	});
 
 	function scrollFunction() {
-		if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-			up.classList.add(`${upSelector}--active`);
+		if (document.body.scrollTop > 1200 || document.documentElement.scrollTop > 1200) {
+			up.classList.add(classActive);
 		} else {
-			up.classList.remove(`${upSelector}--active`);
+			up.classList.remove(classActive);
 		}
 	}
-
-	up.addEventListener('click', (e) => {
-		e.preventDefault();
-		window.scrollTo(0, 0);
-	});
+	scrollFunction();
 }
 
 export default scrollUp;

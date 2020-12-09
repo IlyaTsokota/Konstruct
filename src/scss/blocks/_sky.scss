@@ -2,6 +2,9 @@
 	padding: 120px 0 230px;
 	height: 498px;
 	background: url("../img/bg/2.png") center (center / cover) no-repeat;
+	position: relative;
+	z-index: -1;
+	bottom: -2px;
 	&__body {
 		max-width: 350px;
 		margin: 0 auto;

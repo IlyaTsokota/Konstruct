@@ -1,8 +1,10 @@
 @import "base/variables";
 @import "base/nullstyle";
+@import "blocks/loader";
 @import "base/mixins";
 @import "base/media_mixin";
 @import "base/flex_helper";
+@import "base/animate.scss";
 @import "base/fonts";
 
 * {
@@ -36,3 +38,28 @@ html {
 @import "blocks/sky";
 @import "blocks/signup";
 @import "blocks/footer";
+
+.up {
+	position: fixed;
+	bottom: 30px;
+	right: 20px;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	visibility: hidden;
+	opacity: 0;
+	transition: all 1s;
+
+	&__icon {
+		transform: rotate(-90deg);
+		width: 40px;
+		height: 40px;
+		filter: invert(40%) sepia(94%) saturate(1774%) hue-rotate(168deg) brightness(100%) contrast(102%);
+	}
+	&--active {
+		visibility: visible;
+		opacity: 1;
+	}
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="">
+	<meta name="author" content="Ilya Tsokota">
+	@@include('views/_title.html',{
+	"name": "Konstruct"
+	})
+	@@include('views/_links.html')
+</head>
+
+<body>
+
+	<main class="wrapper">
+		<section class="promo">
+			<div class="promo__body">
+				<div class="promo__row">
+					<a href="#" class="promo__logo"><img src="icons/logo-white.svg" alt="KONSTRUCT"></a>
+				</div>
+				<div class="promo__row">
+					<div class="promo__text">
+						<h1 class="promo__title">PARTNER WITH KONSTUCT</h1>
+						<h2 class="promo__subtitle">An award-winning construction management firm</h2>
+					</div>
+				</div>
+				<div class="promo__row">
+					<a href="#" class="promo__down">SCROLL DOWN</a>
+				</div>
+			</div>
+		</section>
+		@@include('views/_header.html')
+		<section class="story">
+			<div class="container">
+				<h2 class="title">our story</h2>
+				<div class="divider"></div>
+				<div class="story__content flex-container">
+					<div class="story__column">
+						<div>
+							<h3 class="story__subtitle">
+								Founded in 2011 by John Mathew Smith, <span>Konstruct</span> has become the number one
+								construction management firm
+							</h3>
+							<div class="story__desc">
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+								tincidunt ut laoreet dolore magna aliquam erat. Lorem ipsum dolor sit amet, consectetuer
+								adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+								erat.
+							</div>
+						</div>
+					</div>
+					<div class="story__column">
+						<div class="story__items flex-container">
+							<div class="story__item">
+								<a href="#" class="story__card">
+									<div class="story__bg"><img src="img/story/1.png" alt="we plan"></div>
+									<div class="story__we">
+										WE PLAN
+									</div>
+								</a>
+							</div>
+							<div class="story__item">
+								<a href="#" class="story__card">
+									<div class="story__bg"><img src="img/story/2.png" alt="we manage"></div>
+									<div class="story__we">We manage</div>
+								</a>
+							</div>
+							<div class="story__item">
+								<a href="#" class="story__card">
+									<div class="story__bg"><img src="img/story/3.png" alt="we build"></div>
+									<div class="story__we">we build</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="capability">
+			<div class="container">
+				<div class="capability__header flex-container">
+					<div class="capability__title">
+						<h2 class="title title--left">our capabilities</h2>
+						<div class="divider divider--left"></div>
+					</div>
+					<div class="capability__text">
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+						tincidunt ut laoreet dolore magna aliquam erat.
+					</div>
+					<a href="#" class="button">ALL SERVICES</a>
+				</div>
+				<div class="capability__items space-between">
+					<div class="capability__item">
+						<div class="capability__img"><img src="icons/capabilities/1.svg" alt="project and construction">
+						</div>
+						<div class="capability__head">PROJECT AND CONSTRUCTION MANAGEMENT</div>
+						<div class="capability__desc">
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+							tincidunt ut laoreet dolore magna aliquam erat.
+						</div>
+					</div>
+					<div class="capability__item">
+						<div class="capability__img"><img src="icons/capabilities/2.svg" alt="structure audit"></div>
+						<div class="capability__head">STRUCTURE AUDIT AND MAINTENANCE</div>
+						<div class="capability__desc">
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+							tincidunt ut laoreet dolore magna aliquam erat.
+						</div>
+					</div>
+					<div class="capability__item">
+						<div class="capability__img"><img src="icons/capabilities/3.svg" alt="factory"></div>
+						<div class="capability__head">FACTORY CONSTRUCTION AND MODELING</div>
+						<div class="capability__desc">
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+							tincidunt ut laoreet dolore magna aliquam erat.
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<section class="sky">
+			<div class="container">
+				<div class="sky__body">
+					<h2 class="sky__title">
+						Want to build something amazing?
+					</h2>
+					<a href="#" class="button button--center">GET IN TOUCH</a>
+				</div>
+			</div>
+		</section>
+		<section class="signup">
+			<div class="container">
+				<div class="signup__body flex-container">
+					<div class="signup__title">Newsletter Signup</div>
+					<form action="#" class="signup__form">
+						<input type="text" placeholder="test@youremail.com" name="email" />
+						<button class="button">SIGNUP</button>
+					</form>
+				</div>
+			</div>
+		</section>
+		@@include('views/_footer.html')
+
+	</main>
+	@@include('views/_scripts.html')
+</body>
+
+</html>

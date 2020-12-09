@@ -1,0 +1,12 @@
+.divider {
+	width: 50px;
+	height: 2px;
+	background-color: #00a4e5;
+	margin: 10px auto 0;
+	&--left {
+		margin: 10px 0 0;
+		@include _992 {
+			margin: 10px auto 0;
+		}
+	}
+}

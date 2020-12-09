@@ -1,0 +1,34 @@
+@import "base/variables";
+@import "base/nullstyle";
+@import "base/mixins";
+@import "base/media_mixin";
+@import "base/flex_helper";
+@import "base/fonts";
+
+* {
+	font-family: $main-font;
+}
+
+.container {
+	position: relative;
+	max-width: 970px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.wrapper {
+	min-height: 100vh;
+	@include df;
+	flex-direction: column;
+}
+
+@import "blocks/promo";
+@import "blocks/header";
+@import "blocks/buttons";
+@import "blocks/title";
+@import "blocks/story";
+@import "blocks/divider";
+@import "blocks/capability";
+@import "blocks/sky";
+@import "blocks/signup";
+@import "blocks/footer";

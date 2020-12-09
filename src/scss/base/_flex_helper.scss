@@ -1,0 +1,25 @@
+.flex-container {
+	@include df;
+}
+
+.space-between {
+	@include df;
+	justify-content: space-between;
+}
+
+.row {
+	@include df;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.column {
+	@include df;
+	flex-direction: column;
+}
+
+.fcenter {
+	@include df;
+	justify-content: center;
+	align-items: center;
+}

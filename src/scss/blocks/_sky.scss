@@ -1,0 +1,22 @@
+.sky {
+	padding: 120px 0 230px;
+	height: 498px;
+	background: url("../img/bg/2.png") center (center / cover) no-repeat;
+	&__body {
+		max-width: 350px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	&__title {
+		margin-bottom: 35px;
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 36px;
+		letter-spacing: 0.15px;
+		color: #48555b;
+		@include _576 {
+			font-size: 25px;
+		}
+	}
+}

@@ -19,7 +19,9 @@ const gulp = require('gulp'),
 	ttf2woff = require('gulp-ttf2woff'),
 	ttf2woff2 = require('gulp-ttf2woff2'),
 	fonter = require('gulp-fonter'),
-	fs = require('fs');
+	fs = require('fs'),
+	imageminPngquant = require('imagemin-pngquant'),
+	imageminJpegRecompress = require('imagemin-jpeg-recompress');
 
 const srcDir = 'src';
 const distDir = 'dist';
@@ -144,12 +146,17 @@ gulp.task('icons', () => gulp.src(dir.src.icons)
 	.pipe(gulp.dest(dir.dist.icons))
 	.pipe(gulp.src(dir.src.icons))
 	.pipe(imagemin({
-		progressive: true,
-		svgoPlugins: [{
-			removeViewBox: false
-		}],
+		plugins: [
+			imageminPngquant({
+				quality: [0.6, 0.8]
+			})
+		],
 		interlaced: true,
-		optimizationLevel: 3
+		progressive: true,
+		optimizationLevel: 5,
+		svgoPlugins: [{
+			removeViewBox: true
+		}]
 	}))
 	.pipe(gulp.dest(dir.dist.icons))
 	.pipe(browserSync.stream())
@@ -167,6 +174,11 @@ gulp.task('images', () => gulp.src(dir.src.img)
 	.pipe(gulp.dest(dir.dist.img))
 	.pipe(gulp.src(dir.src.img))
 	.pipe(imagemin({
+		plugins: [
+			imageminPngquant({
+				quality: [0.6, 0.8]
+			})
+		],
 		interlaced: true,
 		progressive: true,
 		optimizationLevel: 5,

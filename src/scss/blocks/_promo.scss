@@ -43,6 +43,21 @@
 	padding: 42px 15px 70px;
 	display: flex;
 	justify-content: center;
+	@include _1200 {
+		background: fixed url("../img/bg/1_1200.png") center (center / cover) no-repeat;
+	}
+	@include _992 {
+		background: fixed url("../img/bg/1_992.png") center (center / cover) no-repeat;
+	}
+	@include _768 {
+		background: fixed url("../img/bg/1_768.png") center (center / cover) no-repeat;
+	}
+	@include _576 {
+		background: url("../img/bg/1_576.png") center (center / cover) no-repeat;
+	}
+	@include _480 {
+		background: url("../img/bg/1_480.png") center (center / cover) no-repeat;
+	}
 	@media only screen and (max-device-width: 1366px) {
 		background-attachment: scroll;
 	}

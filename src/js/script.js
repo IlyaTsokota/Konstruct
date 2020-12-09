@@ -18,10 +18,8 @@ import scrollToAnchor from './modules/scrollToAnchor';
 // import { enableScroll, disableScroll } from './modules/scrollSwitcher';
 
 window.addEventListener("load", () => {
-	setTimeout(() => {
-		document.body.classList.add('loaded');
-		start();
-	}, 1500);
+	document.body.classList.add('loaded');
+	start();
 });
 
 function start() {

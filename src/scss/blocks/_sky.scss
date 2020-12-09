@@ -5,6 +5,23 @@
 	position: relative;
 	z-index: -1;
 	bottom: -2px;
+
+	@include _1200 {
+		background: url("../img/bg/2_1200.png") center (center / cover) no-repeat;
+	}
+	@include _992 {
+		background: url("../img/bg/2_992.png") center (center / cover) no-repeat;
+	}
+	@include _768 {
+		background: url("../img/bg/2_768.png") center (center / cover) no-repeat;
+	}
+	@include _576 {
+		background: url("../img/bg/2_576.png") center (center / cover) no-repeat;
+	}
+	@include _480 {
+		background: url("../img/bg/2_480.png") center (center / cover) no-repeat;
+	}
+
 	&__body {
 		max-width: 350px;
 		margin: 0 auto;

@@ -9,6 +9,10 @@
 	font-family: $main-font;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 .container {
 	position: relative;
 	max-width: 970px;

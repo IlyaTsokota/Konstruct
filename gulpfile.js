@@ -139,7 +139,7 @@ gulp.task('fonts', () => {
 
 gulp.task('icons', () => gulp.src(dir.src.icons)
 	.pipe(webp({
-		quality: 100
+		quality: 80
 	}))
 	.pipe(gulp.dest(dir.dist.icons))
 	.pipe(gulp.src(dir.src.icons))
@@ -162,7 +162,7 @@ gulp.task('mailer', () => gulp.src(dir.src.mailer)
 
 gulp.task('images', () => gulp.src(dir.src.img)
 	.pipe(webp({
-		quality: 100
+		quality: 80
 	}))
 	.pipe(gulp.dest(dir.dist.img))
 	.pipe(gulp.src(dir.src.img))
